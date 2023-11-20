@@ -5,7 +5,7 @@ import { useParams } from "next/navigation";
 import { useEffect } from "react";
 
 export const OrgControl = () => {
-  const params: { organizationId: string } = useParams();
+  const params = useParams();
   const { setActive } = useOrganizationList();
 
   useEffect(() => {
