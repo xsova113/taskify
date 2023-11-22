@@ -9,13 +9,14 @@ import {
   PopoverClose,
   PopoverContent,
   PopoverTrigger,
-} from "../popover";
-import { Button } from "../button";
+} from "../ui/popover";
+import { Button } from "../ui/button";
 import { X } from "lucide-react";
 import { toast } from "sonner";
 import { FormPicker } from "./form-picker";
 import { ElementRef, useRef } from "react";
 import { useRouter } from "next/navigation";
+import { useProModal } from "@/hooks/use-pro-modal";
 
 interface FormPopoverProps {
   children: React.ReactNode;
@@ -30,8 +31,10 @@ export const FormPopover = ({
   side = "bottom",
   sideOffset = 9,
 }: FormPopoverProps) => {
+  const proModal = useProModal();
   const closeRef = useRef<ElementRef<"button">>(null);
   const router = useRouter();
+
   const { execute, fieldErrors } = useAction(createBoard, {
     onSuccess: (data) => {
       console.log({ data });
@@ -42,6 +45,7 @@ export const FormPopover = ({
     onError: (err) => {
       console.error({ err });
       toast.error(err);
+      proModal.onOpen();
     },
   });
 

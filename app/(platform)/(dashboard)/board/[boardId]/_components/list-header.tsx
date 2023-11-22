@@ -1,7 +1,7 @@
 "use client";
 
 import { updateList } from "@/actions/update-list";
-import { FormInput } from "@/components/ui/form/form-input";
+import { FormInput } from "@/components/form/form-input";
 import { useAction } from "@/hooks/use-action";
 import { List } from "@prisma/client";
 import { useRef, useState, ElementRef } from "react";

@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { FormSubmit } from "@/components/ui/form/form-submit";
+import { FormSubmit } from "@/components/form/form-submit";
 import {
   Popover,
   PopoverContent,

@@ -2,8 +2,8 @@
 
 import { createCard } from "@/actions/create-card";
 import { Button } from "@/components/ui/button";
-import { FormSubmit } from "@/components/ui/form/form-submit";
-import { FormTextarea } from "@/components/ui/form/form-textarea";
+import { FormSubmit } from "@/components/form/form-submit";
+import { FormTextarea } from "@/components/form/form-textarea";
 import { useAction } from "@/hooks/use-action";
 import { Plus, X } from "lucide-react";
 import { useParams } from "next/navigation";

@@ -2,7 +2,7 @@
 
 import { updateBoard } from "@/actions/update-board";
 import { Button } from "@/components/ui/button";
-import { FormInput } from "@/components/ui/form/form-input";
+import { FormInput } from "@/components/form/form-input";
 import { useAction } from "@/hooks/use-action";
 import { Board } from "@prisma/client";
 import { ElementRef, useRef, useState } from "react";

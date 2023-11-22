@@ -1,11 +1,9 @@
 "use client";
 
 import { Accordion } from "@/components/ui/accordion";
-import { Button, buttonVariants } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+import { buttonVariants } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import {
-  OrganizationList,
   useOrganization,
   useOrganizationList,
 } from "@clerk/nextjs";

@@ -7,6 +7,7 @@ import { CardForm } from "./card-form";
 import { cn } from "@/lib/utils";
 import { CardItem } from "./card-item";
 import { Draggable, Droppable } from "@hello-pangea/dnd";
+import { useCardModal } from "@/hooks/use-card-modal";
 
 interface ListItemProps {
   index: number;

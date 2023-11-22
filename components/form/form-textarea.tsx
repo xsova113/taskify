@@ -1,8 +1,8 @@
 "use client";
 
 import { KeyboardEventHandler, forwardRef } from "react";
-import { Label } from "../label";
-import { Textarea } from "../textarea";
+import { Label } from "../ui/label";
+import { Textarea } from "../ui/textarea";
 import { cn } from "@/lib/utils";
 import { FormErrors } from "./form-errors";
 import { useFormStatus } from "react-dom";
